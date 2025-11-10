@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Progress History</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/x-icon">
+    <!-- Link to your CSS file that applies the same styling as your upload page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Progress History</h1>
+        {% if history %}
+            <div class="progress-gallery" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                {% for upload in history %}
+                    <div class="progress-item" style="margin: 10px;">
+                        <img src="{{ upload.image_url }}" alt="Crop Progress Image" style="max-width: 300px; border: 2px solid var(--primary-color);">
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No progress images uploaded yet.</p>
+        {% endif %}
+        <div class="button-container" style="margin-top: 20px;">
+            <a href="{{ url_for('upload_progress') }}" class="btn btn-success">Upload New Progress Image</a>
+            <a href="{{ url_for('home') }}" class="btn btn-outline-success">Home</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Agronomics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

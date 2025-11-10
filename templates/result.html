@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Detection Result</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Crop Detection Result</h1>
+        <p>Welcome to the Crop Detection system. Below are the results of the crop image analysis.</p>
+    </header>
+    
+    <section class="result-container">
+        <h2>Detection Details</h2>
+        <p><strong>Detected Label:</strong> {{ label }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <img src="{{ image_url }}" alt="Uploaded Image" style="width:50%; max-width:400px; align-content: center;">
+    </section>
+
+    <section class="details-container">
+        <h2>Suggested Actions</h2>
+        <p>Based on the detected crop, here are some recommendations for its care and maintenance:</p>
+        <ul>
+            <li><strong>Watering Schedule:</strong> Ensure a consistent watering schedule. Avoid over-watering, as it may lead to root rot.</li>
+            <li><strong>Fertilizer:</strong> For optimal growth, use a balanced fertilizer with nitrogen, phosphorus, and potassium.</li>
+            <li><strong>Pest Control:</strong> Regularly inspect your crop for signs of pests. Organic pesticide options are available if needed.</li>
+            <li><strong>Growth Monitoring:</strong> Keep an eye on the crop's health by checking for wilting, yellowing leaves, or stunted growth.</li>
+        </ul>
+    </section>
+
+    <!-- New Section for PDF Report Download -->
+    <section class="details-container">
+        <h2>Insurance Report (PDF)</h2>
+        <p>Download the detailed PDF report for government insurance claims:</p>
+        <a href="{{ pdf_url }}" download>
+            <button>Download PDF Report</button>
+        </a>
+    </section>
+
+    <section class="related-info">
+        <h2>Helpful Tips</h2>
+        <p>Here are some additional tips for better crop management:</p>
+        <ul>
+            <li><strong>Climate Considerations:</strong> Weather and climate have a significant impact on crop growth. Ensure the crop is suited to the local climate.</li>
+            <li><strong>Soil Health:</strong> Regularly test your soil's pH and nutrient levels to ensure optimal conditions for growth.</li>
+            <li><strong>Crop Rotation:</strong> Practice crop rotation to maintain soil fertility and reduce the risk of pests and diseases.</li>
+        </ul>
+    </section>
+
+    <div class="button-container">
+        <a href="/upload"><button>Upload Another Image</button></a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Agronomics. All rights reserved. | Designed with care for farmers and crop enthusiasts.</p>
+        <p>For support, contact us at <a href="mailto:support@agronomics.com">support@agronomics.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Crop Image</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image for Crop Detection</h1>
+        
+        <!-- Add the image here -->
+        <img src="{{ url_for('static', filename='images/bg2.jpg') }}" alt="Crop Detection Example" class="img-fluid my-4">
+
+        <p>Welcome to the crop detection tool! By uploading an image of your crops, you can get insights into their health, detect any diseases or pest infestations, and receive recommendations on how to improve your crops' growth.</p>
+        
+        <h2>How it Works</h2>
+        <p>Our advanced AI model analyzes the image you upload, detecting various factors like crop diseases, pests, and environmental stresses. This analysis helps in making data-driven decisions for your farming practices.</p>
+
+        <h3>Steps to Upload Your Crop Image</h3>
+        <ol>
+            <li>Click on the "Choose File" button below.</li>
+            <li>Select the image of your crop that you want to analyze.</li>
+            <li>Click "Upload Image" to submit the file for analysis.</li>
+            <li>Within moments, you'll receive a detailed report.</li>
+        </ol>
+
+        <h3>Why Upload Crop Images?</h3>
+        <p>Uploading crop images allows you to monitor the health of your crops continuously and take proactive measures to avoid potential crop loss. Whether it's pest control, disease management, or general care, this tool assists you in every step of the farming process.</p>
+
+        <h3>Supported File Formats</h3>
+        <p>For best results, please upload images in the following formats:</p>
+        <ul>
+            <li>JPG</li>
+            <li>PNG</li>
+            <li>JPEG</li>
+        </ul>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <br><br>
+            <button type="submit" class="btn btn-success">Upload Image</button>
+        </form>
+
+        <div class="mt-4">
+            <p>If you need further assistance, feel free to <a href="/about">contact us</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

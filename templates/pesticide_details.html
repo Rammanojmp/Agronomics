@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/x-icon">
+    <title>Pesticide Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pesticide Details</h1>
+<p>Below are details of various pesticides commonly used in agriculture along with their features and benefits.</p>
+
+<table>
+    <tr>
+        <th>No.</th>
+        <th>Pesticide Name</th>
+        <th>Type</th>
+        <th>Active Ingredient</th>
+        <th>Target Pest</th>
+        <th>Application Method</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Malathion</td>
+        <td>Insecticide</td>
+        <td>Malathion</td>
+        <td>Fruit Flies, Mosquitoes</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Glyphosate</td>
+        <td>Herbicide</td>
+        <td>Glyphosate</td>
+        <td>Weeds</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Carbaryl</td>
+        <td>Insecticide</td>
+        <td>Carbaryl</td>
+        <td>Caterpillars, Beetles</td>
+        <td>Dust</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Paraquat</td>
+        <td>Herbicide</td>
+        <td>Paraquat</td>
+        <td>Weeds</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Chlorpyrifos</td>
+        <td>Insecticide</td>
+        <td>Chlorpyrifos</td>
+        <td>Aphids, Termites</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Captan</td>
+        <td>Fungicide</td>
+        <td>Captan</td>
+        <td>Fungal Diseases</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Dicamba</td>
+        <td>Herbicide</td>
+        <td>Dicamba</td>
+        <td>Broadleaf Weeds</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Permethrin</td>
+        <td>Insecticide</td>
+        <td>Permethrin</td>
+        <td>Mosquitoes, Ticks</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Azoxystrobin</td>
+        <td>Fungicide</td>
+        <td>Azoxystrobin</td>
+        <td>Fungal Diseases</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>2,4-D</td>
+        <td>Herbicide</td>
+        <td>2,4-D</td>
+        <td>Broadleaf Weeds</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Imidacloprid</td>
+        <td>Insecticide</td>
+        <td>Imidacloprid</td>
+        <td>Aphids, Beetles</td>
+        <td>Soil Drench</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Mancozeb</td>
+        <td>Fungicide</td>
+        <td>Mancozeb</td>
+        <td>Fungal Diseases</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Endosulfan</td>
+        <td>Insecticide</td>
+        <td>Endosulfan</td>
+        <td>Whiteflies, Aphids</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Thiram</td>
+        <td>Fungicide</td>
+        <td>Thiram</td>
+        <td>Fungal Diseases</td>
+        <td>Seed Treatment</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Bifenthrin</td>
+        <td>Insecticide</td>
+        <td>Bifenthrin</td>
+        <td>Ants, Termites</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Metalaxyl</td>
+        <td>Fungicide</td>
+        <td>Metalaxyl</td>
+        <td>Downy Mildew</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Spinosad</td>
+        <td>Insecticide</td>
+        <td>Spinosad</td>
+        <td>Thrips, Caterpillars</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Thiacloprid</td>
+        <td>Insecticide</td>
+        <td>Thiacloprid</td>
+        <td>Beetles, Aphids</td>
+        <td>Spray</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Carboxin</td>
+        <td>Fungicide</td>
+        <td>Carboxin</td>
+        <td>Seed-borne Fungi</td>
+        <td>Seed Treatment</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Lambda-cyhalothrin</td>
+        <td>Insecticide</td>
+        <td>Lambda-cyhalothrin</td>
+        <td>Aphids, Beetles</td>
+        <td>Spray</td>
+    </tr>
+</table>
+
+</body>
+</html>

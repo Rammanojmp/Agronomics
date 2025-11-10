@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Crop Progress Image</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image for Crop Progress Tracking</h1>
+        
+        <!-- Display a sample image for crop progress tracking -->
+        <img src="{{ url_for('static', filename='images/bg2.jpg') }}" alt="Crop Progress Example" class="img-fluid my-4">
+
+        <p>Welcome to the crop progress tracking tool! By uploading a monthly image of your crops, you can monitor their growth and overall health over time. This helps you make informed decisions about crop care and schedule timely interventions.</p>
+        
+        <h2>How it Works</h2>
+        <p>Our system allows you to regularly upload images of your crop fields. Over time, you can view a history of these images to track progress, identify improvements, and detect any emerging issues.</p>
+
+        <h3>Steps to Upload Your Crop Progress Image</h3>
+        <ol>
+            <li>Click on the "Choose File" button below.</li>
+            <li>Select the image of your crop field that you want to record for progress tracking.</li>
+            <li>Click "Upload Image" to submit the file.</li>
+            <li>Your image will be added to your progress history, allowing you to compare it with previous uploads.</li>
+        </ol>
+
+        <h3>Why Track Crop Progress?</h3>
+        <p>Regularly tracking your crop images helps you monitor growth patterns, notice early signs of stress or nutrient deficiency, and plan for interventions such as fertilization or pest management.</p>
+
+        <h3>Supported File Formats</h3>
+        <p>For best results, please upload images in the following formats:</p>
+        <ul>
+            <li>JPG</li>
+            <li>PNG</li>
+            <li>JPEG</li>
+        </ul>
+
+        <form action="/upload_progress" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <br><br>
+            <button type="submit" class="btn btn-success">Upload Progress Image</button>
+        </form>
+
+        <div class="mt-4">
+            <p>If you need further assistance, feel free to <a href="/about">contact us</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
