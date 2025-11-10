@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #388e3c; /* Dark green background */
+    color: white; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* About Container Styling */
+.about-container {
+    max-width: 800px; /* Maximum width for the content */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: white; /* White background for the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.8rem; /* Increased font size for main heading */
+}
+
+h2 {
+    color: #388e3c; /* Dark green for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+    font-size: 2.2rem; /* Increased font size for subheadings */
+}
+
+h3 {
+    color: #388e3c; /* Dark green for smaller headings */
+    font-size: 1.8rem; /* Increased font size for smaller headings */
+}
+
+/* Paragraphs and Lists */
+p {
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 10px 0; /* Space above and below paragraphs */
+    font-size: 1.2rem; /* Increased font size for paragraphs */
+}
+
+ul {
+    margin-left: 20px; /* Indent unordered lists */
+    font-size: 1.2rem; /* Increased font size for list items */
+}
+
+/* Image Styling */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 20px auto; /* Center the image with margin */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 10px;
+    background-color: #388e3c; /* Dark green background */
+    color: white; /* White text color */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Link Styling */
+a {
+    color: #388e3c; /* Dark green for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Smaller font size for main heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Smaller font size for subheadings on mobile */
+    }
+
+    p, ul {
+        font-size: 1rem; /* Smaller font size for paragraphs and lists on mobile */
+    }
+}

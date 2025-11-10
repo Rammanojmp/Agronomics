@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', cursive; /* Using the imported font for the entire document */
+}
+
+body {
+  background-color: #e6f9e6; /* Light green background */
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: #4CAF50; /* Darker green for headings */
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #4CAF50; /* Green border for paragraphs */
+  line-height: 0.1em;
+}
+
+p span {
+  background: #ffffff; /* White background for highlighted text */
+  padding: 0 10px;
+}
+
+input {
+  margin-bottom: 3%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input, button {
+  padding: 3%;
+  width: 100%;
+  border-radius: 5px; /* Rounded corners for inputs and buttons */
+  border: 1px solid #4CAF50; /* Green border for inputs and buttons */
+}
+
+.login-container {
+  background-color: white; /* White background for the login container */
+  padding: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow effect */
+  width: 40vw;
+  margin-left: 30vw;
+  height: 70vh;
+  margin-top: 15vh;
+  border-radius: 10px; /* Rounded corners for the container */
+}
+
+#submit, #create-acct-btn {
+  background-color: #4CAF50; /* Dark green for buttons */
+  color: white;
+  border: none;
+  margin-top: 5%;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#submit:hover, #create-acct-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#sign-up {
+  border: none;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  background: none;
+  color: #4CAF50; /* Green text for return button */
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}

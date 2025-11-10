@@ -1,0 +1,88 @@
+/* index.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #28a745; /* Green header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px; /* Rounded corners */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger font size for the main title */
+}
+
+header p {
+    font-size: 1.2em; /* Slightly larger font for the subtitle */
+}
+
+section {
+    padding: 20px 0;
+}
+
+.scheme {
+    background-color: #ffffff; /* White background for schemes */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.scheme:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.scheme h3 {
+    font-size: 1.8em; /* Larger font for scheme titles */
+    color: #28a745; /* Green color for scheme titles */
+    margin-bottom: 10px;
+}
+
+.scheme p {
+    font-size: 1.1em; /* Standard font size for paragraphs */
+    color: #333; /* Dark gray text for readability */
+}
+
+.scheme ul {
+    font-size: 1.1em; /* Standard font size for lists */
+    margin-left: 20px; /* Indentation for lists */
+}
+
+.scheme ul li {
+    margin: 5px 0; /* Spacing between list items */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #28a745; /* Green footer */
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above footer */
+}
+
+footer p {
+    margin: 5px 0; /* Spacing for footer text */
+}

@@ -1,0 +1,150 @@
+/* CSS Variables for Color Management */
+:root {
+    --primary-color: #aeff00; /* Bright green */
+    --secondary-color: #aeff00; /* Darker green */
+    --background-color: #121212; /* Black background */
+    --light-background: #1e1e1e; /* Dark grey background */
+    --text-color: #ffffff; /* Light grey text color */
+    --subtle-text-color: #ffffff; /* Subtle text color */
+    --highlight-color: #59f0c3; /* Highlight color (gold) */
+    --white: #000000; /* White color */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow color */
+}
+
+/* General Styling */
+body {
+    background-image: url('{{ url_for("static", filename="images/bg4.jpg") }}');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--highlight-color);
+}
+
+/* Main Content */
+.container {
+    padding: 40px 15px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-top: 30px;
+    animation: fadeIn 1s ease;
+}
+
+h4 {
+    color: var(--secondary-color);
+}
+
+/* Paragraphs */
+p {
+    color: var(--subtle-text-color);
+    animation: fadeIn 1.5s ease;
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-success:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-outline-success {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--light-background);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Content Sections */
+.text-start {
+    text-align: left;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Focus States for Accessibility */
+.btn-success:focus, .btn-outline-success:focus, a:focus {
+    outline: 2px solid var(--highlight-color);
+    outline-offset: 2px;
+}
